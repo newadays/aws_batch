@@ -1,0 +1,20 @@
+.DS_Store*
+# generated files
+.idea
+**/.idea/
+*.iml
+**/target
+*.log
+.classpath
+.project
+**/org.eclipse.jdt.core.prefs
+**/org.eclipse.core.resources.prefs
+**/org.eclipse.m2e.core.prefs
+javabuilder.jar
+Error_logs/
+node_modules/
+.vagrant
+*.retry
+*pycache*
+**tmp/
+**/package
