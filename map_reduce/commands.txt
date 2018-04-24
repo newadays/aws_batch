@@ -1,0 +1,14 @@
+#create the environment
+aws batch create-compute-environment --cli-input-json file://compute_env.json --region us-east-1
+aws batch register-job-definition --job-definition-name map_reduce --cli-input-json file://job_definition.json --region us-east-1
+aws batch create-job-queue --cli-input-json file://queue.json --region us-east-1
+aws batch submit-job --cli-input-json file://submit_job.json --region us-east-1
+
+#build your docker image
+docker build -t awsbatch/mapper -f Dockerfile ../..
+
+#Run the docker locally as a test
+docker run -it --rm \
+  -e "HOME=/home" \
+  -v $HOME/.aws:/home/.aws \
+  awsbatch/mapper
