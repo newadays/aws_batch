@@ -6,8 +6,6 @@ import subprocess
 import shlex
 
 sys.path.append('/lib')
-from lib.s3_utils import download_file, upload_file
-from lib.job_utils import generate_working_dir, delete_working_dir
 
 
 # http://kdd.ics.uci.edu/databases/kddcup99/kddcup.names
