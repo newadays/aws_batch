@@ -20,6 +20,6 @@ docker run -it --rm \
 #Login into ECR repository and push the image
 aws ecr get-login --no-include-email --region us-east-1
 
-docker tag awsbatch/mapper:latest {arn}.dkr.ecr.us-east-1.amazonaws.com/awsbatch/mapper:latest
+docker tag awsbatch/mapper:latest {arn}.dkr.ecr.{region_name}.amazonaws.com/awsbatch/mapper:latest
 
-docker push {arn}.dkr.ecr.us-east-1.amazonaws.com/awsbatch/mapper:latest
+docker push {arn}.dkr.{region_name}.amazonaws.com/awsbatch/mapper:latest
