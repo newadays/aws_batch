@@ -16,3 +16,10 @@ docker run -it --rm \
   -e input_file='mobydick.txt' \
   -v $HOME/.aws:/home/.aws \
   awsbatch/mapper
+  
+#Login into ECR repository and push the image
+aws ecr get-login --no-include-email --region us-east-1
+
+docker tag awsbatch/mapper:latest {arn}.dkr.ecr.us-east-1.amazonaws.com/awsbatch/mapper:latest
+
+docker push {arn}.dkr.ecr.us-east-1.amazonaws.com/awsbatch/mapper:latest
