@@ -10,5 +10,8 @@ docker build -t awsbatch/mapper -f Dockerfile ../..
 #Run the docker locally as a test
 docker run -it --rm \
   -e "HOME=/home" \
+  -e s3_input_dir='s3://mybucket/data/' \
+  -e s3_output_dir='s3://mybucket/result/' \
+  -e input_file='mobydick.txt' \
   -v $HOME/.aws:/home/.aws \
   awsbatch/mapper
