@@ -5,6 +5,7 @@ aws batch create-job-queue --cli-input-json file://queue.json --region us-east-1
 aws batch submit-job --cli-input-json file://submit_job.json --region us-east-1
 
 #build your docker image
+cd aws_batch/map_reduce/mappper/docker/
 docker build -t awsbatch/mapper -f Dockerfile ../..
 
 #Run the docker locally as a test
