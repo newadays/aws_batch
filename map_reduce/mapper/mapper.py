@@ -22,7 +22,7 @@ from lib.job_utils import generate_working_dir, delete_working_dir
 
 
 # Get temp working dir
-working_dir = os.getenv('  ', os.getcwd())
+working_dir = os.getenv('working_dir', os.getcwd())
 print('####################working_dir############################')
 print(working_dir)
 
