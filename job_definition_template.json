@@ -1,0 +1,29 @@
+{
+
+	"parameters": {},
+	"retryStrategy": {
+		"attempts": 1
+	},
+	"containerProperties": {
+		"mountPoints": [],
+		"image": "{account_number}.dkr.ecr.{region}.amazonaws.com/awsbatch/mapper",
+		"environment": [{
+			"name": "input_file",
+			"value": "{file_name}"
+		}, {
+			"name": "s3_input_dir",
+			"value": "s3://{bucket_name}/data/"
+		}, {
+			"name": "s3_output_dir",
+			"value": "s3://{bucket_name}/result/"
+		}],
+		"vcpus": 1,
+		"command": [],
+        "jobRoleArn": "arn:aws:iam::{account_number}:role/{ecs_Instance_Role}",
+		"volumes": [],
+		"memory": 1000,
+		"ulimits": []
+	},
+	"type": "container",
+	"jobDefinitionName": "mapper_job_def"
+}
