@@ -5,7 +5,7 @@ Code Example of Running Map Reduce Jobs on AWS Batch with Docker
 ![Alt map_reduce_word_count](https://github.com/newadays/aws_batch/blob/master/aws_batch_map_reduce.png)
 
 
-* A map reduce example using map reduce on AWS Batch to count words in a large body of text e.g. [moby dick](https://en.wikipedia.org/wiki/Moby-Dick), [KDD 99](http://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html)
+* Analytic job example using map reduce on AWS Batch to count words in a large body of text e.g. [moby dick](https://en.wikipedia.org/wiki/Moby-Dick), [KDD 99](http://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html)
 - You can learn more about cluster computing using AWS Batch using the link [here](https://aws.amazon.com/blogs/aws/aws-batch-run-batch-computing-jobs-on-aws/?nc1=b_rp)
 * The docker container can be set up using the commands in the file [here](https://github.com/newadays/aws_batch/blob/master/map_reduce/commands.txt)
 
