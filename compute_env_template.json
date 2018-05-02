@@ -1,0 +1,18 @@
+{
+  "computeEnvironmentName": "map_reduce_job",
+  "computeResources":{
+    "desiredvCpus": 1,
+    "ec2KeyPair": "{ec2_instance_key}",
+    "instanceRole": "arn:aws:iam::{account_number}:instance-profile/{ecs_Instance_Role}",
+    "instanceTypes": ["optimal"],
+    "imageId": "",
+    "maxvCpus":256,
+    "minvCpus":1,
+    "securityGroupIds":[ "{security_group_id/VPC-Only}"],
+    "subnets":["{subnet-<if any/VPC-Only>}"],
+    "type":"EC2"
+  },
+  "serviceRole":"arn:aws:iam::{account_number}:role/service-role/AWSBatchServiceRole",
+  "state":"ENABLED",
+  "type":"MANAGED"
+}

@@ -1,0 +1,12 @@
+ {
+  "jobName": "mapper_job",
+  "jobQueue": "map_reduce_job_queue",
+  "jobDefinition": "mapper_job_def",
+  "containerOverrides":{
+    "command":[],
+    "environment":[]
+  },
+  "retryStrategy": {
+    "attempts": 1
+  }
+}

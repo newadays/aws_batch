@@ -7,17 +7,18 @@ LABEL container.base.image="python:3"
 LABEL software.version=${VERSION}
 LABEL tags="mapreduce"
 
-
+RUN apt-get update \
+    && apt-get install -y bash
 RUN pip install boto3 awscli
 
 WORKDIR /
 
-COPY mapper/requirements.txt /
+ADD requirements.txt /
 
 RUN pip install --no-cache-dir -r /requirements.txt
 
-ADD mapper/mapper.py /mapper.py
+ADD mapper.py /mapper.py
 
-COPY mapper/lib /lib
+COPY lib /lib
 
 ENTRYPOINT ["python", "mapper.py"]
