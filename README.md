@@ -2,6 +2,8 @@
 # aws_batch
 Code Example of Running AWS Batch with Docker
 
+![Alt map_reduce_word_count](https://github.com/newadays/aws_batch/blob/master/aws_batch_map_reduce.png)
+
 
 * A word count example using map reduce on AWS Batch with docker to count words in a large body of text e.g. moby dick, KDD dataset.
 - You can learn more about cluster computing using AWS Batch using the link here -
