@@ -20,6 +20,9 @@ Code Example of Running Map Reduce Jobs on AWS Batch with Docker
 * name: s3_input_dir, value: s3://mybucket/input/mobydick.txt
 * name: s3_output_dir, value: s3://mybucket/result
 
+### Use Cases
+* Run map reduce patterned jobs for large text mining, log analysis (possibly with elastic search) etc.
+* Run AWS Batch to preprocess S3 input data for machine learning jobs on AWS Sagemaker and others
 
 [moby dick](https://en.wikipedia.org/wiki/Moby-Dick)
 [KDD-dataset](http://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html)
