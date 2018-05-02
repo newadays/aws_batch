@@ -22,8 +22,7 @@ Code Example of Running Map Reduce Jobs on AWS Batch with Docker
 4. Setup your AWS Batch environment and ECS repository for Docker images - look [here](https://github.com/newadays/aws_batch/blob/master/map_reduce/commands.txt) for AWS CLI commands
 5. Specify the environment variables below and run the job 
 * name: s3_input_dir, value: s3://mybucket/input/mobydick.txt
-* name: s3_output_dir, value: s3://mybucket/output
-* name: working_dir, value: /mapper
+* name: s3_output_dir, value: s3://mybucket/result
 
 
 [moby dick](https://en.wikipedia.org/wiki/Moby-Dick)
