@@ -5,13 +5,9 @@ Code Example of Running Map Reduce Jobs on AWS Batch with Docker
 ![Alt map_reduce_word_count](https://github.com/newadays/aws_batch/blob/master/aws_batch_map_reduce.png)
 
 
-* Parallelization example using [map reduce](https://en.wikipedia.org/wiki/MapReduce) on [AWS Batch](https://aws.amazon.com/batch/) to count words in a large body of text e.g. [moby dick](https://en.wikipedia.org/wiki/Moby-Dick), [KDD 99](http://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html)
-- You can learn more about computing using AWS Batch using the link [here](https://aws.amazon.com/blogs/aws/aws-batch-run-batch-computing-jobs-on-aws/?nc1=b_rp)
-* The docker container can be set up using the commands in the file [here](https://github.com/newadays/aws_batch/blob/master/map_reduce/commands.txt)
-
-- You can learn about using Docker for python [here](https://docs.docker.com/samples/library/python/#create-a-dockerfile-in-your-python-app-project)
-* The example leverage the multiprocessing in Python
-- You can learn more about Multiprocessing in Python [here](https://docs.python.org/2/library/multiprocessing.html)
+* Parallelization example using [map reduce](https://en.wikipedia.org/wiki/MapReduce) on [AWS Batch](https://aws.amazon.com/batch/) to count words in a large body of text e.g. [moby dick](https://en.wikipedia.org/wiki/Moby-Dick), [KDD 99](http://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html). You can learn more about computing using AWS Batch using the link [here](https://aws.amazon.com/blogs/aws/aws-batch-run-batch-computing-jobs-on-aws/?nc1=b_rp)
+* The Docker container can be set up using the commands in the file [here](https://github.com/newadays/aws_batch/blob/master/map_reduce/commands.txt). You can also learn about using Docker for python [here](https://docs.docker.com/samples/library/python/#create-a-dockerfile-in-your-python-app-project)
+* The example leverage the multiprocessing in Python - You can learn more about  [here](https://docs.python.org/2/library/multiprocessing.html)
 
 * By default, parallelism expands S3 data to available cores exposed to the container. Batch computing will enable dynamically scale set of EC2 instances and run parallel jobs. When setting up AWS Batch compute environment ensure to have minimum VCPUs set to zero to prevent running on-demand EC2 idle when there no jobs.
 
