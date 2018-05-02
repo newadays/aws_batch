@@ -5,7 +5,7 @@ Code Example of Running Map Reduce Jobs on AWS Batch with Docker
 ![Alt map_reduce_word_count](https://github.com/newadays/aws_batch/blob/master/aws_batch_map_reduce.png)
 
 
-* A word count example using map reduce on AWS Batch with docker to count words in a large body of text e.g. moby dick, KDD dataset.
+* A word count example using map reduce on AWS Batch with docker to count words in a large body of text e.g. moby dick, KDD.
 - You can learn more about cluster computing using AWS Batch using the link [here](https://aws.amazon.com/blogs/aws/aws-batch-run-batch-computing-jobs-on-aws/?nc1=b_rp)
 * The docker container can be set up using the commands in the file [here](https://github.com/newadays/aws_batch/blob/master/map_reduce/commands.txt)
 
@@ -18,9 +18,9 @@ Code Example of Running Map Reduce Jobs on AWS Batch with Docker
 
 ### Quick Steps
 1. Create an S3 bucket with folders for input and output data
-2. Upload mobydick.txt (in the mapper folder) or KDD-dataset to the input folder of the s3 bucket
+2. Upload mobydick.txt or KDD-dataset to the input folder of the s3 bucket
 3. Note the S3 bucket URL for input data and output folder e.g.  s3://mybucket/data/mobydick.txt & s3://mybucket/result
-4. Setup your AWS Batch environment and ECS repository for Docker images - you can look into the commands.txt for AWS CLI commands
+4. Setup your AWS Batch environment and ECS repository for Docker images - you can look here for [here](https://github.com/newadays/aws_batch/blob/master/map_reduce/commands.txt) AWS CLI commands
 5. Specify the environment variables below and run the job 
 * name: s3_input_dir, value: s3://mybucket/input/mobydick.txt
 * name: s3_output_dir, value: s3://mybucket/output
