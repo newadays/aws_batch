@@ -1,6 +1,6 @@
 
 # aws_batch
-Code Example of Running AWS Batch with Docker
+Code Example of Running Map Reduce Jobs on AWS Batch with Docker
 
 ![Alt map_reduce_word_count](https://github.com/newadays/aws_batch/blob/master/aws_batch_map_reduce.png)
 
