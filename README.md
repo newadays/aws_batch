@@ -10,7 +10,7 @@ https://aws.amazon.com/blogs/aws/aws-batch-run-batch-computing-jobs-on-aws/?nc1=
 * The example leverage the multiprocessing in Python
 - You can learn more about Multiprocessing in Python -  https://docs.python.org/2/library/multiprocessing.html
 
-* By default, parallelism expands s3 data to available cores exposed to the container
+* By default, parallelism expands S3 data to available cores exposed to the container
 * Batch computing will enable dynamically scale set of EC2 instances and run parallel jobs
 * When setting up AWS Batch compute environment ensure to have minimum vcpus set to zero to prevent running on demand EC2 idle when there no jobs
 
