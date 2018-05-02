@@ -20,7 +20,7 @@ Code Example of Running Map Reduce Jobs on AWS Batch with Docker
 1. Create an S3 bucket with folders for input and output data
 2. Upload mobydick.txt or KDD-dataset to the input folder of the s3 bucket
 3. Note the S3 bucket URL for input data and output folder e.g.  s3://mybucket/data/mobydick.txt & s3://mybucket/result
-4. Setup your AWS Batch environment and ECS repository for Docker images - you can look here for [here](https://github.com/newadays/aws_batch/blob/master/map_reduce/commands.txt) AWS CLI commands
+4. Setup your AWS Batch environment and ECS repository for Docker images - look here for [here](https://github.com/newadays/aws_batch/blob/master/map_reduce/commands.txt) AWS CLI commands
 5. Specify the environment variables below and run the job 
 * name: s3_input_dir, value: s3://mybucket/input/mobydick.txt
 * name: s3_output_dir, value: s3://mybucket/output
